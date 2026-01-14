@@ -1,15 +1,15 @@
 import { Text, View } from "react-native";
+import { styles } from '../styles/auth.styles';
+import { Link } from 'expo-router';
 
 export default function Index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
-    </View>
-  );
+      <View style={styles.container}>
+          <Link href={"/internships"}>
+              create link and navigate to other page contents on clicking this
+          </Link>
+      </View>
+    );
 }
+
+
